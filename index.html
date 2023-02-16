@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Synth</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+        <div class="settingsBar">
+          <div class="left">
+            <span>Volume: </span>
+            <input
+              type="range"
+              min="0.0"
+              max="1.0"
+              step="0.01"
+              value="0.5"
+              list="volumes"
+              name="volume" />
+            <datalist id="volumes">
+              <option value="0.0" label="Mute"></option>
+              <option value="1.0" label="100%"></option>
+            </datalist>
+            <div class="right">
+              <span>Current waveform: </span>
+              <select name="waveform">
+                <option value="sine">Sine</option>
+                <option value="square" selected>Square</option>
+                <option value="sawtooth">Sawtooth</option>
+                <option value="triangle">Triangle</option>
+                <option value="custom">Custom</option>
+              </select>
+            </div>
+          </div>
+          </div>
+        </header>
+        <div class="keyboard">
+            <ul class="keys">
+                <li class="key white"><span>A</span></li>
+                <li class="key black"><span>W</span></li>
+                <li class="key white"><span>S</span></li>
+                <li class="key black"><span>E</span></li>
+                <li class="key white"><span>D</span></li>
+                <li class="key white"><span>F</span></li>
+                <li class="key black"><span>T</span></li>
+                <li class="key white"><span>G</span></li>
+                <li class="key black"><span>Y</span></li>
+                <li class="key white"><span>H</span></li>
+                <li class="key black"><span>U</span></li>
+                <li class="key white"><span>J</span></li>
+                <li class="key white"><span>K</span></li>
+                <li class="key black"><span>O</span></li>
+                <li class="key white"><span>L</span></li>
+                <li class="key black"><span>P</span></li>
+                <li class="key white"><span>;</span></li>
+
+            </ul>
+        </div>
+        </div>
+      </div>
+</body>
+</html>
